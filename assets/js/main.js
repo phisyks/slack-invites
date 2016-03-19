@@ -137,7 +137,7 @@ function getParameterByName(name) {
 
 					window.setTimeout(function() {
 						$message._hide();
-					}, 3000);
+					}, 8000);
 
 				};
 
@@ -169,7 +169,7 @@ function getParameterByName(name) {
 							webhook.post(data).then(function (response) {
 								$form.reset();
 							  $submit.disabled = false;
-							  $message._show('success', 'Done! We have sent you an invite check your Email now');
+							  $message._show('success', 'Done! We have sent you an invite. Check your Email');
 							});
 						} else {
 								$form.reset();
